@@ -25,7 +25,7 @@ const BuyNow = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [showCongratulations, setShowCongratulations] = useState(false);
-
+import toast from 'react-hot-toast';
   const  user = useUser();
   const navigate = useNavigate();
   const location = useLocation();
@@ -174,7 +174,7 @@ const BuyNow = () => {
               }
             } catch (error) {
               console.error('Payment verification error:', error);
-              alert('Payment verification failed. Please contact support.');
+                toast.error('Payment verification failed. Please contact support.');
             }
           },
           prefill: {
@@ -191,7 +191,7 @@ const BuyNow = () => {
         razorpay.open();
       } else {
         // Cash On Delevery order
-        // alert('Order placed successfully! You will receive an email confirmation.');
+           toast.success ('Order placed successfully! You will receive an email confirmation.');
         setShowCongratulations(true);
        
       }
