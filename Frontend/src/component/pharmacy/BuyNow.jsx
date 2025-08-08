@@ -5,7 +5,7 @@ import { FaArrowLeft, FaCreditCard, FaMoneyBillWave, FaShieldAlt, FaTruck } from
 import { BASE_URL } from '../../utils/Data';
 const REACT_APP_RAZORPAY_KEY_ID = import.meta.env.VITE_RAZORPAY_KEY_ID;
 import {    FaStar, FaGift, FaEnvelope } from 'react-icons/fa';
-
+import toast from 'react-hot-toast'
 const BuyNow = () => {
   const [medicine, setMedicine] = useState(null);
   const [quantity, setQuantity] = useState(1);
