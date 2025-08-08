@@ -1,0 +1,6 @@
+.env
+node_modules
+
+git commit -m "first commit"
+EMAIL-SETUP.md
+E-PHARMACY-SETUP.md

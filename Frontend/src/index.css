@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Winky Rough",system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #86BBD8;
+  color:black;
+}
+
+/* Animation for order status notifications */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.3s ease-in;
+}
+

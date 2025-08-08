@@ -1,0 +1,49 @@
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+.animate-fade-in-delay {
+  animation: fade-in 1s ease-out forwards;
+  animation-delay: 0.4s;
+}
+.animate-slide-in {
+  animation: slide-in 0.8s ease-out forwards;
+}
+
+
+  /* Animation for the dotted line path */
+    .workflow-path {
+        stroke-dasharray: 1500;
+        stroke-dashoffset: 1500;
+        animation: draw-path 5s ease-in-out forwards;
+    }
+    @keyframes draw-path {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+    /* Animation for the steps (circles and text) */
+    .workflow-step {
+        opacity: 0;
+        animation: fade-in 1s ease-in forwards;
+    }
+    /* Stagger the animation for each step */
+    #step-1 { animation-delay: 0.5s; }
+    #step-2 { animation-delay: 1.5s; }
+    #step-3 { animation-delay: 2.5s; }
+    #step-4 { animation-delay: 3.5s; }
+    #step-5 { animation-delay: 4.5s; }
+
+    @keyframes fade-in {
+        to {
+            opacity: 1;
+        }
+    }

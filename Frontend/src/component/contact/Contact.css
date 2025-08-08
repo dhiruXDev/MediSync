@@ -1,0 +1,60 @@
+.input-box{
+    margin-top: 20px;
+  
+}
+
+.input-box .field{
+    width:100%;
+    height:50px;
+    background: transparent;
+    border:2px solid #ddd;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size:16px;
+    color:#333;
+    margin-top: 8px;
+}
+
+.input-box .field-mess{
+    width:100%;
+    height:150px;
+    background: transparent;
+    border:2px solid #ddd;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size:16px;
+    color:#333;
+    margin-top: 8px;
+    resize:none
+}
+
+form button{
+    width:100%;
+    height: 55px;
+    border:2px solid #ddd;
+    outline: none;
+    background-color: #86BBD8;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(10, 15, 10, 7);
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+
+
+form{
+    border-radius: 5px;
+    width:350px;
+    height: max-content;
+    padding:20px;
+    background-color: #fff;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+}
