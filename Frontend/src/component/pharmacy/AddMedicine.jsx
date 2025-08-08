@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useUser } from '../shared/UserContext';
 import { FaUpload, FaSave, FaArrowLeft } from 'react-icons/fa';
 import { BASE_URL } from '../../utils/Data';
-import toast from 'react-hot-toast'
+import toast from 'react-hot-toast';
+
 const AddMedicine = () => {
   const [formData, setFormData] = useState({
     name: '',
