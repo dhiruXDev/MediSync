@@ -148,34 +148,6 @@ MediSync is a full-stack web application designed for hospitals and clinics to e
 
 ---
 
-## 📝 Setup Instructions
-
-1. Clone the repo
-
-```bash
-git clone https://github.com/yourusername/medisync.git
-```
-
-2. Navigate to frontend & install dependencies
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-3. Navigate to backend & install dependencies
-
-```bash
-cd backend
-npm install
-npm run dev
-```
-
-4. Create a `.env` file in the backend and add your environment variables
-
----
-
 ## 📷 Screenshots (Optional)
 
 *Add screenshots here to show off UI components, dashboards, and features.*
@@ -184,4 +156,4 @@ npm run dev
 
 ---
 
-**Built with ❤️ by Team MediSync**
+** ❤️ 🩺 MediSync**
