@@ -222,7 +222,7 @@ const AddMedicine = () => {
                     Category *
                   </label>
                   <select
-                    name="category"
+                    name="category" 
                     value={formData.category}
                     onChange={handleInputChange}
                     required
