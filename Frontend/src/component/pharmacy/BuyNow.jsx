@@ -5,7 +5,8 @@ import { FaArrowLeft, FaCreditCard, FaMoneyBillWave, FaShieldAlt, FaTruck } from
 import { BASE_URL } from '../../utils/Data';
 const REACT_APP_RAZORPAY_KEY_ID = import.meta.env.VITE_RAZORPAY_KEY_ID;
 import {    FaStar, FaGift, FaEnvelope } from 'react-icons/fa';
-import toast from 'react-hot-toast'
+import toast from 'react-hot-toast';
+
 const BuyNow = () => {
   const [medicine, setMedicine] = useState(null);
   const [quantity, setQuantity] = useState(1);
@@ -25,7 +26,7 @@ const BuyNow = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [showCongratulations, setShowCongratulations] = useState(false);
-import toast from 'react-hot-toast';
+
   const  user = useUser();
   const navigate = useNavigate();
   const location = useLocation();
@@ -174,7 +175,7 @@ import toast from 'react-hot-toast';
               }
             } catch (error) {
               console.error('Payment verification error:', error);
-                toast.error('Payment verification failed. Please contact support.');
+              toast.success('Payment verification failed. Please contact support.');
             }
           },
           prefill: {
@@ -191,7 +192,7 @@ import toast from 'react-hot-toast';
         razorpay.open();
       } else {
         // Cash On Delevery order
-           toast.success ('Order placed successfully! You will receive an email confirmation.');
+        // alert('Order placed successfully! You will receive an email confirmation.');
         setShowCongratulations(true);
        
       }
