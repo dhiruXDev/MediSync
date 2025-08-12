@@ -112,7 +112,7 @@ router.post('/', auth, roles(['seller']), upload.single('image'), async (req, re
             description,
             price: parseFloat(price),
             stock: parseInt(stock),
-            image: req.file.path,
+            image: req.file.path.replace(/\\/g, "/"), // <-- normalize slashes
             sellerId: req.user.userId,
             category,
             manufacturer,
