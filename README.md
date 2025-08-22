@@ -2,7 +2,7 @@
 
 ## 🚀 Project Overview
 
-MediSync is a full-stack web application designed for hospitals and clinics to efficiently manage doctor appointments, patient records, complaints, feedback, and medical reports. It also integrates AI capabilities using **Gemini 2.5 Pro** to intelligently review uploaded reports and give insight summaries.
+MediSync is a full-stack web application for hospitals and clinics to efficiently manage appointments, patient records, complaints, feedback, and medical reports, while also enabling the buying and selling of medical products. It integrates AI with Gemini 2.5 Pro to analyze uploaded reports and provide insightful summaries.
 
 ---
 
@@ -17,7 +17,6 @@ MediSync is a full-stack web application designed for hospitals and clinics to e
 * **SweetAlert2** — Enhanced alert modals
 * **Swiper.js** — Carousel integration for doctor testimonials
 * **Lucide-react** — Icon library
-* **PDF.js** — For rendering uploaded medical reports
 * **Google Gemini API (via @google/generative-ai)** — For report reviews and AI summaries
 * **Vite (v6.3.0)** — Fast build tool and dev server
 
